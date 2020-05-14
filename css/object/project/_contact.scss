@@ -1,0 +1,393 @@
+// main: ../../default.scss
+  .p-contact-catch {
+    padding: 80px 0;
+  }
+  .p-contact-catch--ttl {
+    font-weight: bold;
+  }
+  .p-contact-catch--ttl__strong {
+    font-size: 2.3rem;
+    color: #4f859b;
+    font-weight: bold;
+  }
+  .p-contact-catch--copy {
+    margin-top: 20px;
+    line-height: 22px;
+  }
+  .p-contact-flow {
+    width: 88%;
+    border-radius: 60px;
+    margin: 0 6% 40px;
+    height: 120px;
+    display: table;
+    position: relative;
+  }
+  .p-contact-flow__b {
+    background: $bgColor;
+  }
+  .p-contact-flow__c {
+    background: #e8f5f1;
+  }
+  .p-contact-flow--step {
+    background: $mainColor;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    display: table;
+    top: 25px;
+    p {
+      font-size: 1.4rem;
+      @include tableCell();
+      span {
+        font-size: 1.8rem;
+        font-weight: bold;
+      }
+    }
+  }
+  .p-contact-flow--step__odd {
+    left: -24px;
+  }
+  .p-contact-flow--text {
+    @include tableCell();
+    padding: 0 56px;
+    span {
+      font-size: 1.4rem;
+    }
+    a {
+      color: $mainColor;
+    }
+  }
+  .p-contact-flow--img__b1 {
+    width: 70px;
+    position: absolute;
+    top: 20px;
+    right: -26px;
+  }
+  .p-contact-flow--img__b2 {
+    width: 70px;
+    position: absolute;
+    top: 33px;
+  }
+  .p-contact-flow--img__b3 {
+    width: 68px;
+    position: absolute;
+    top: 6px;
+    right: -22px;
+  }
+  .p-contact-flow--img__b4 {
+    width: 68px;
+    position: absolute;
+    top: 16px;
+  }
+  .p-contact-flow--img__b5 {
+    width: 80px;
+    position: absolute;
+    top: 30px;
+    right: -35px;
+  }
+  .p-contact-flow--img__b6,
+  .p-contact-flow--img__c6 {
+    width: 65px;
+    position: absolute;
+    top: 12px;
+  }
+  .p-contact-flow--img__c1 {
+    width: 80px;
+    position: absolute;
+    top: 14px;
+    right: -26px;
+  }
+  .p-contact-flow--img__c2 {
+    width: 75px;
+    position: absolute;
+    top: 22px;
+  }
+  .p-contact-flow--img__c3 {
+    width: 28px;
+    position: absolute;
+    top: 8px;
+    right: 5px;
+  }
+  .p-contact-flow--img__c4 {
+    width: 80px;
+    position: absolute;
+    top: 14px;
+  }
+  .p-contact-flow--img__c5 {
+    width: 74px;
+    position: absolute;
+    top: 7px;
+    right: -23px;
+  }
+//Special Service
+  .p-contact-special {
+    padding: 20px 0;
+    position: relative;
+  }
+  .p-contact-special--ttlWrap {
+    width: 100%;
+    background: $mainColor;
+    display: table;
+    color: #fff;
+    height: 90px;
+  }
+  .p-contact-special--ttl {
+    @include tableCell();
+    p {
+      margin-left: auto;
+      font-size: $subttlFontSize;
+      font-weight: bold;
+    }
+  }
+  .p-contact-special--copyWrap {
+    width: 100%;
+    background: $bgColor;
+    display: table;
+    height: 130px;
+  }
+  .p-contact-special--copy {
+    @include tableCell();
+    p {
+      @include containerS();
+    }
+  }
+  .p-contact-special--copy__notes {
+    font-size: 1.2rem;
+    color: $mainColor;
+    padding-top: 8px;
+  }
+  .p-contact-special--img {
+    position: absolute;
+    width: 90px;
+    left: 4%;
+    top: 20px;
+  }
+//JBAA
+  .p-contact-jbaa {
+    background-image: url('../images/jbaa.jpg');
+    background-size: cover;
+    background-position: 0 50%;
+  }
+  .p-contact-jbaa--ttl {
+    font-size: $ttlFontSize;
+    text-align: center;
+    font-weight: bold;
+    span {
+      color: $mainColor;
+      font-weight: bold;
+    }
+  }
+  .p-contact-jbaa--img {
+    width: 60%;
+    margin: -20px auto 0;
+  }
+  .p-contact-jbaa--desc {
+    @include containerS();
+    text-align: center;
+    p {
+      margin-top: 30px;
+      a {
+        color: $mainColor;
+      }
+    }
+  }
+@media all and (max-width: $media-S) {
+  .p-contact-catch {
+    text-align: center;
+  }
+  .p-contact-flow--step__even {
+    left: -24px;
+  }
+  .p-contact-flow--img__b2 {
+    right: -26px;
+  }
+  .p-contact-flow--img__b4 {
+    right: -24px;
+  }
+  .p-contact-flow--img__b6,
+  .p-contact-flow--img__c6 {
+    right: -15px;
+  }
+  .p-contact-flow--img__c2 {
+    right: -26px;
+  }
+  .p-contact-flow--img__c4 {
+    right: -25px;
+  }
+  .p-contact-special--ttl p,
+  .p-contact-special--copy p {
+    text-align: center;
+  }
+  .p-contact-jbaa--img {
+    max-width: 280px;
+  }
+}
+@media all and (min-width: $mediaM-) {
+  .p-contact-catch {
+    padding: 100px 0;
+  }
+  .p-contact-catch--ttl {
+    font-size: $subttlFontSize;
+  }
+  .p-contact-catch--ttl__strong {
+    font-size: $ttlFontSize;
+  }
+  .p-contact-catch--copy {
+    line-height: 26px;
+  }
+  .p-contact-flow {
+    width: 80%;
+    margin: 0 50px 40px;
+    &:nth-child(even) {
+      margin-left: 14%;
+      margin-right: 6%;
+    }
+  }
+  .p-contact-flow--step {
+    width: 80px;
+    height: 80px;
+    top: 20px;
+    p {
+      font-size: 1.6rem;
+      span {
+        font-size: 2rem;
+      }
+    }
+  }
+  .p-contact-flow--step__even {
+    right: -24px;
+  }
+  .p-contact-flow--text {
+    padding: 0 100px;
+  }
+  .p-contact-flow--img__b1 {
+    width: 160px;
+    top: -30px;
+    right: -20px;
+  }
+  .p-contact-flow--img__b2 {
+    width: 180px;
+    top: 0;
+    left: -110px;
+  }
+  .p-contact-flow--img__b3 {
+    width: 110px;
+    top: -32px;
+    right: -30px;
+  }
+  .p-contact-flow--img__b4 {
+    width: 110px;
+    top: -10px;
+    left: -50px;
+  }
+  .p-contact-flow--img__b5 {
+    width: 130px;
+    top: 8px;
+    right: -20px;
+  }
+  .p-contact-flow--img__b6,
+  .p-contact-flow--img__c6 {
+    width: 90px;
+    top: 0;
+    left: -30px;
+  }
+  .p-contact-flow--img__c1 {
+    width: 130px;
+    top: -13px;
+    right: -20px;
+  }
+  .p-contact-flow--img__c2 {
+    width: 150px;
+    top: -14px;
+    left: -86px;
+  }
+  .p-contact-flow--img__c3 {
+    width: 36px;
+    top: -6px;
+    right: 20px;
+  }
+  .p-contact-flow--img__c4 {
+    width: 120px;
+    top: -15px;
+    left: -43px;
+  }
+  .p-contact-flow--img__c5 {
+    width: 114px;
+    top: -22px;
+    right: -14px;
+  }
+//Special Service
+  .p-contact-special {
+    @include flex();
+  }
+  .p-contact-special--ttlWrap {
+    width: 36%;
+    height: 130px;
+  }
+  .p-contact-special--ttl p {
+    width: 66%;
+  }
+  .p-contact-special--copyWrap {
+    width: 64%;
+  }
+  .p-contact-special--copy p {
+    width: 70%;
+    margin: 0 2% 0 30%;
+  }
+  .p-contact-special--img {
+    width: 220px;
+    left: 26%;
+    top: -10px;
+  }
+//JBAA
+  .p-contact-jbaa--img {
+    width: 300px;
+    margin: -40px auto 0;
+  }
+  .p-contact-jbaa--desc {
+    @include containerM();
+  }
+}
+@media all and (min-width: $mediaL-) {
+  .p-contact-catch--copy {
+    line-height: 30px;
+  }
+  .p-contact-flow {
+    width: 700px;
+    &:nth-child(even) {
+      margin-left: 210px;
+      margin-right: 0;
+    }
+  }
+//Special Service
+  .p-contact-special--ttlWrap {
+    width: 40%;
+    height: 150px;
+  }
+  .p-contact-special--ttl {
+    p {
+      width: 300px;
+    }
+  }
+  .p-contact-special--copyWrap {
+    width: 60%;
+    height: 150px;
+  }
+  .p-contact-special--copy {
+    p {
+      width: 406px;
+      margin: 0 auto 0 170px;
+    }
+  }
+  .p-contact-special--img {
+    width: 250px;
+    left: 30%;
+  }
+//JBAA
+  .p-contact-jbaa--desc {
+    @include container(800px);
+  }
+}

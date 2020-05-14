@@ -1,0 +1,62 @@
+// main: ../../default.scss
+  .c-contact {
+    @include containerS(90%);
+    background: #fff;
+    box-shadow: 4px 4px 4px $shadowColor, -4px 4px 4px $shadowColor;
+    padding: 20px 2%;
+    a {
+      text-decoration: underline;
+    }
+  }
+  .c-contact-must {
+    color: $mainColor;
+  }
+  .c-contact--cont {
+    margin-bottom: 20px;
+  }
+  .c-contact--birth {
+    @include flex;
+  }
+  .c-contact--caution {
+    font-size: 1.4rem;
+    color: $mainColor;
+    margin-top: 8px;
+  }
+@media all and (min-width: $mediaM-) {
+  .c-contact {
+    @include containerM(80%);
+    padding: 40px 5%;
+  }
+  .c-contact--cont {
+    @include flex();
+    margin-bottom: 20px;
+  }
+  .c-contact--ttl {
+    width: 28%;
+  }
+  .c-contact--input {
+    width: 72%;
+  }
+  .c-contact--caution {
+    font-size: 1.4rem;
+    color: $mainColor;
+    margin: 8px 0 0 28%;
+  }
+}
+@media all and (min-width: $mediaL-) {
+  .c-contact {
+    @include container(700px);
+    padding: 40px 130px;
+  }
+  .c-contact--ttl {
+    width: 220px;
+  }
+  .c-contact--input {
+    width: 480px;
+  }
+  .c-contact--caution {
+    font-size: 1.4rem;
+    color: $mainColor;
+    margin: 8px 0 0 220px;
+  }
+}

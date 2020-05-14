@@ -1,0 +1,1209 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+Theme Name:
+Theme URI:
+Author: KICK-RING
+Author URI:
+Description: The 2013 theme for WordPress takes us back to the blog, featuring a full range of post formats, each displayed beautifully in their own unique way. Design details abound, starting with a vibrant color scheme and matching header images, beautiful typography and icons, and a flexible layout that looks great on any device, big or small.
+Version: 1.0
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+.clearfix {
+  min-height: 1px;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+* html .clearfix {
+  height: 1px;
+}
+a{
+  text-decoration: none;
+}
+img{
+  width: 100%;
+  height: 100%;
+}
+body{
+  font-size: 5vw;
+  font-family: Lato, "Noto Sans JP", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  /* font-family: "FOT-筑紫A丸ゴシック Std L" */
+  color: #414042;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.pc {
+  display: none;
+}
+
+
+/* header */
+header {
+  margin: 1em 0 0 3%;
+}
+
+  .logo {
+    width: 40%;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .sp-navi {
+    width: 100%;
+  }
+
+    .sp-navi img {
+      width: 12%;
+      height: 5%;
+      position: fixed;
+      right: 3%;
+      top: 3%;
+      z-index: 100;
+      background: rgba(255,255,255,.5);
+    }
+
+  .sp-navi-menu {
+    z-index: 2;
+    width: 100%;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(255,255,255);
+    box-shadow: 2px 0 5px rgb(30,30,30);
+  }
+
+    .sp-navi-menu ul {
+      padding: 3px 3%;
+      line-height: 3em;
+    }
+
+      .sp-navi-menu ul a {
+        color: #f00;
+      }
+
+      .sp-navi-menu ul a li {
+        border-bottom: 3px solid rgba(255,0,0,.3);
+      }
+
+
+/* eyecatch */
+.eyecatch {
+  margin: 10px 0 0;
+}
+
+  .pc-eyecatch {
+    display: none;
+  }
+
+
+/* cont01 */
+.cont01 {
+  padding: 10px 0;
+  background-image: url('image/bg.jpg');
+  background-size: cover;
+}
+
+  .cont01 h2 {
+    font-size: 8vw;
+    text-align: center;
+    color: #ed1a3b;
+    font-weight: 500;
+  }
+
+  .cont01 ul {
+    list-style: square;
+    padding: 0 0 0 7%;
+    margin: .5em 0;
+  }
+
+    .cont01 ul img {
+      display: none;
+    }
+
+
+  .cont01-img {
+    width: 98%;
+    margin: 0 1%;
+  }
+
+
+/* cont02 */
+.cont02 {
+  padding: 20px 1% 10px;
+}
+
+  .cont02 h3 {
+    font-size: 110%;
+    color: #ed1a3b;
+    text-align: center;
+    font-weight: 500;
+    margin: 0 0 10px;
+  }
+
+  .cont02 h2 {
+    font-size: 120%;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .cont02-wrap {
+    margin: 20px 0 0;
+  }
+
+    .cont02-wrap img {
+      width: 80%;
+      margin: 0 10%;
+    }
+
+    .cont02-wrap ul {
+      list-style: disc;
+      padding: 0 0 0 3%;
+      width: 95%;
+      margin: 0 0 0 2%;
+      line-height: 1.75em;
+    }
+
+
+/* cont共有 */
+.cont {
+  padding: 20px 0 10px;
+}
+
+  .cont h2 {
+    font-size: 130%;
+    font-weight: 500;
+    text-align: center;
+    background: #ffff00;
+    width: 98%;
+    margin: 0 1%;
+    padding: 8px 0;
+  }
+
+
+/* cont03 */
+.cont03 {
+  background-image: url('image/bg.jpg');
+  background-size: cover;
+}
+
+  .job-search {
+    width: 96%;
+    margin: 20px 2% 0;
+  }
+
+    .job-search-cont {
+      width: 69%;
+      padding: 16px 15%;
+      margin: 16px 0;
+      background: #fff;
+      font-size: 90%;
+      box-shadow: 2px 5px 5px rgba(0,0,0,0.4);
+    }
+
+      .jsc-title {
+        text-align: center;
+      }
+
+      .jsc-wrap {
+        margin: 16px 0 0;
+      }
+
+        .jsc-wrap th {
+          font-weight: bold;
+        }
+
+        .jsc-wrap td {
+          padding: 0 0 0 1em;
+        }
+
+  .cont03-contact {
+    width: 82%;
+    margin: 10px 5%;
+    padding: 8px 4%;
+    border: none;
+    font-size: 126%;
+
+    font-weight: bold;
+    text-align: center;
+    background: #e70;
+    color: #fff;
+    border-radius: 10px;
+  }
+
+
+/* cont04 */
+.voice {
+  width: 96%;
+  margin: 20px 2% 0;
+}
+
+.voice-cont {
+  width: 100%;
+  margin: 0 0 18vw;
+}
+
+    .voice-cont-title {
+      text-align: center;
+      background: #6dcff6;
+      color: #fff;
+      padding: 6px 0;
+    }
+
+    .voice-cont-text {
+      margin: 12px 0;
+    }
+
+    .voice-cont-name {
+      float: right;
+      position: relative;
+    }
+
+      .voice-cont-name::after {
+        content: "";
+        position: absolute;
+        left: 1%;
+        right: 6%;
+        bottom: -8px;
+        border-bottom: 5px solid #ed1c24;
+        z-index: 0;
+      }
+
+
+/* cont05 */
+.cont05{
+  background-image: url('image/bg.jpg');
+  background-size: cover;
+}
+
+  .faq {
+    width: 96%;
+    margin: 20px 2% 0;
+  }
+
+    .faq-wrap {
+      margin: 0 0 30px;
+    }
+
+    .faq-cont {
+      width: 100%;
+      margin: 0 0 10px;
+      font-size: 90%;
+      box-shadow: 2px 5px 5px rgba(0,0,0,0.4);
+    }
+
+      .faq-q-cont {
+        background: #6dcff6;
+        color: #fff;
+        padding: 8px 3%;
+      }
+
+        .faq-q {
+          width: 10%;
+          float: left;
+          font-weight: bold;
+          font-size: 120%;
+        }
+
+        .faq-question {
+          width: 90%;
+          float: left;
+        }
+
+      .faq-a-cont {
+        background: #fff;
+        padding: 16px 3% 21px;
+        box-shadow: 0 -5px #6dcff6 inset;
+      }
+
+        .faq-a {
+          width: 10%;
+          float: left;
+          font-weight: bold;
+          font-size: 120%;
+        }
+
+        .faq-answer {
+          width: 90%;
+          float: left;
+        }
+
+      .faq-guide-item {
+        background: #fff;
+        color: #6dcff6;
+        border: 1px solid #6dcff6;
+        text-align: center;
+        font-weight: bold;
+        padding: 12px 0;
+        border-radius: 10px;
+        width: 96%;
+        margin: 0 2%;
+      }
+
+
+
+/* cont06 */
+.reason {
+  width: 96%;
+  margin: 20px 2% 0;
+}
+
+  .reason p {
+    font-weight: bold;
+  }
+
+  .reason-cont {
+    margin: 20px 0 0;
+  }
+
+    .reason-wrap {
+      width: 100%;
+      margin: 10px 0 0;
+    }
+
+      .reason-wrap-item {
+        margin: 0 0 30px;
+      }
+
+        .reason-title {
+          background: #e1e1e1;
+          width: 60%;
+          padding: 4px 0;
+          text-align: center;
+          margin: 0 0 4px;
+        }
+
+    .reason-cont img {
+      width: 90%;
+      margin: 0 5%;
+    }
+
+
+
+/* cont07 */
+.cont07{
+  background-image: url('image/bg.jpg');
+  background-size: cover;
+}
+
+  .cont07 h2 {
+    width: 78%;
+    padding: 8px 10%;
+  }
+
+
+.contact {
+  width: 96%;
+  margin: 20px 2% 0;
+}
+
+  .contact-form {
+    background: #ebebec;
+    padding: 20px 4% 15px;
+    border-radius: 10px;
+  }
+
+    .contact-item {
+      margin: 0 0 16px;
+    }
+
+      .contact-item-title {
+        margin: 0 1em 0 0;
+        display: inline-block;
+        float: left;
+      }
+
+      .wpcf7-text {
+        width: 98%;
+        height: 2em;
+        float: left;
+      }
+
+      .wpcf7-textarea {
+        width: 98%;
+        float:left;
+      }
+
+        .cf7-name {
+          width: 55%;
+          margin: 0 1% 0 0;
+        }
+
+        .cf7-tel {
+          width: 55%;
+          margin: 0 1% 0 0;
+        }
+
+        .wpcf7-select {
+          background: #fff;
+          height: 2em;
+        }
+
+      .wpcf7-list-item {
+        margin: 0 1em 0 0;
+      }
+
+      .wpcf7-checkbox .wpcf7-list-item {
+        display: block;
+        float: left;
+      }
+
+        .cit-last {
+          height: 6em;
+        }
+        .cit-height {
+          height: 3.2em;
+        }
+
+        .last {
+          margin: 0;
+        }
+
+      .wpcf7-checkbox {
+        font-size: 94%;
+      }
+
+        .check-other {
+          width: 5.5rem;
+        }
+
+    /* 20190627 add */
+        .wpcf7-radio>.wpcf7-list-item {
+          display: block;
+          float: left;
+        }
+        .wpcf7-radio .wpcf7-list-item-label {
+          margin: 0 0 0 1px;
+        }
+
+      .tos {
+        margin: 10px 0 0;
+      }
+
+        .tos-title, .pp-title {
+          text-align: center;
+          margin: 12px 0 0;
+        }
+
+        .tos-cont, .pp-cont {
+          width: 96%;
+          margin: 4px auto 0;
+          border: 1px solid #aaa;
+          background: #fff;
+          height: 4em;
+          padding: 4px 1%;
+          border-radius: 10px;
+          font-size: 80%;
+          overflow: scroll;
+        }
+
+      .confirm {
+        text-align: center;
+        margin: 20px 0 0;
+        font-size: 90%;
+      }
+
+/* iphone submit css reset */
+      input[type="submit"],
+      input[type="button"] {
+        border-radius: 10px;
+        -webkit-box-sizing: content-box;
+        -webkit-appearance: button;
+        appearance: button;
+        /* border: none; */
+        box-sizing: border-box;
+        cursor: pointer;
+      }
+      input[type="submit"]::-webkit-search-decoration,
+      input[type="button"]::-webkit-search-decoration {
+        display: none;
+      }
+      input[type="submit"]::focus,
+      input[type="button"]::focus {
+        outline-offset: -2px;
+      }
+
+      .wpcf7-submit {
+        width: 80%;
+        margin: 10px 10%;
+        color: #fff;
+        background: #e70;
+        line-height: 240%;
+        font-size: 120%;
+        font-weight: bold;
+        border-radius: 10px;
+        border: 3px solid #e70;
+      }
+
+      .contact-caution {
+        font-size: 80%;
+        color: #f00;
+        padding: 0 0 0 .5em;
+      }
+
+      .screen-reader-response {
+        display: none;
+      }
+
+      .wpcf7-response-output {
+        text-align: center;
+      }
+
+      .wpcf7-mail-sent-ok {
+        color: #e70;
+        font-size: 90%;
+      }
+
+      .wpcf7-validation-errors {
+        color: #f00;
+        font-size: 90%;
+      }
+
+  .company {
+    width: 98%;
+    margin: 20px auto 0;
+    border: 1px solid #ebebec;
+    box-sizing: border-box;
+  }
+
+    .company-cont {
+      background: #ebebec;
+      margin: 1%;
+      padding: 10px 0;
+    }
+
+      .company table {
+        width: 94%;
+        margin: 0 auto;
+      }
+
+        .company table tr {
+          line-height: 2em;
+        }
+
+          .company table th {
+            width: 33%;
+            font-weight: bold;
+          }
+
+          .company table td {
+            width: 67%;
+          }
+
+/* footer */
+footer {
+  text-align: center;
+  font-size: 70%;
+  padding: 0 0 90px;
+}
+
+
+.to-top {
+  font-weight: bold;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 25px;
+  right: 2%;
+  background: #f00;
+  color: #fff;
+  border-radius: 50% 50%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 200%;
+  border: 2px solid #f00;
+  transition: .3s;
+}
+
+.line-block {
+  display: none;
+}
+.sp-line {
+  width: 65%;
+  position: fixed;
+  left: 1%;
+  bottom: 1%;
+  background: #02b902;
+  padding: 8px 5% 8px 0;
+  text-align: center;
+  border-radius: 10px;
+  background-image: url('image/line-logo.jpg');
+  background-repeat: no-repeat;
+  background-size: 18%;
+  background-position: 95% 40%;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* send */
+.send-cont {
+  width: 100%;
+  margin: 40px 0;
+  text-align: center;
+}
+
+@media all and (min-width: 450px) and (max-width: 600px) {
+  body {
+    font-size: 3.5vw;
+  }
+  /* 20190627 add */
+      .cit-last,
+      .cit-height {
+        height: inherit;
+      }
+      .wpcf7-radio {
+        width: 70%;
+        float: left;
+      }
+      .wpcf7-radio>.wpcf7-list-item {
+        display: block;
+      }
+      .wpcf7-radio .wpcf7-list-item-label {
+        margin: 0 0 0 1px;
+      }
+}
+
+/* Tablet css */
+@media all and (min-width: 601px) and (max-width: 834px) {
+  body {
+    font-size: 3.5vw;
+  }
+
+
+  /* header */
+  .logo {
+    width: 30%;
+  }
+
+    .sp-navi img {
+      width: 8%;
+    }
+
+
+  /* eyecatch */
+  .pc-eyecatch {
+    display: block;
+  }
+
+  .sp-eyecatch {
+    display: none;
+  }
+
+
+  /* cont01 */
+  .cont01 h2 {
+    font-size: 6vw;
+  }
+
+
+  /* cont02 */
+  .cont02 h2 {
+    font-size: 140%;
+  }
+
+    .cont02-wrap ul {
+      width: 80%;
+      margin: 0 0 0 15%;
+    }
+
+
+  /* cont03 */
+  .job-search {
+    width: 90%;
+    margin: 20px 5% 0;
+  }
+
+  .cont03-contact {
+    font-size: 110%;
+    padding: 16px 4%;
+  }
+
+
+  /* cont04 */
+  .voice {
+    width: 90%;
+    margin: 20px 5% 0;
+  }
+
+  /* cont05 */
+  .faq {
+    width: 90%;
+    margin: 20px 5% 0;
+  }
+
+    .faq-q-cont {
+      padding: 8px 1%;
+    }
+
+      .faq-q {
+        width: 6%;
+      }
+
+      .faq-question {
+        width: 94%;
+      }
+
+    .faq-a-cont {
+      padding: 16px 1% 21px;
+    }
+
+      .faq-a {
+        width: 6%;
+      }
+
+      .faq-answer {
+        width: 94%;
+      }
+
+
+  /* cont07 */
+  .cont07 h2 {
+    width: 98%;
+    padding: 8px 0;
+  }
+
+    .cit-last,
+    .cit-height {
+      height: inherit;
+    }
+
+    /* 20190627 add */
+        .wpcf7-radio {
+          width: 70%;
+          float: left;
+        }
+        .wpcf7-radio>.wpcf7-list-item {
+          display: block;
+        }
+        .wpcf7-radio .wpcf7-list-item-label {
+          margin: 0 0 0 1px;
+        }
+
+    footer {
+      padding: 0 0 100px;
+    }
+
+    .to-top {
+      bottom: 90px;
+    }
+
+    .sp-line {
+      display: none;
+    }
+    .line-block {
+      display: block;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      text-align: center;
+    }
+
+}
+
+
+
+/* PC CSS */
+@media all and (min-width: 835px) {
+  body {
+    font-size: 18px;
+  }
+
+  a[href^="tel:"] {
+    color: #414042;
+    pointer-events: none;
+  }
+
+  .container {
+    min-width: 980px;
+    max-width: 1020px;
+  }
+
+  .sp {
+    display: none;
+  }
+
+  .pc {
+    display: block;
+  }
+
+  /* header */
+  header {
+    margin: 50px 0 0 6%;
+  }
+
+    .logo {
+      width: 20%;
+      float: left;
+    }
+
+    nav {
+      display: block;
+      font-size: 14px;
+      width: 77%;
+      float: left;
+      background: #f00;
+      margin: 43px 0 0 3%;
+    }
+
+    nav ul li {
+      width: auto;
+      float: left;
+      color: #fff;
+      padding: 0 2%;
+      height: 42px;
+      line-height: 300%;
+    }
+
+      nav ul li:hover {
+        background: #963134;
+        font-weight: bold;
+      }
+
+    .sp-navi {
+      display: none;
+    }
+
+
+  /* eyecatch */
+  .pc-eyecatch {
+    display: block;
+  }
+
+  .sp-eyecatch {
+    display: none;
+  }
+
+
+  /* cont01 */
+  .cont01 {
+    padding: 60px 0 20px;
+  }
+
+    .cont01 h2 {
+      font-size: 40px;
+    }
+
+    .cont01 ul {
+      margin: 20px 0 0 25%;
+      list-style: none;
+      padding: 0;
+    }
+
+      .cont01 ul img {
+        display: block;
+        width: 4%;
+        float: left;
+      }
+
+      .cont01 ul li {
+        width: 94.5%;
+        float: left;
+        margin: 3px 0 10px 1.5%;
+      }
+
+    .cont01-img {
+      width: 80%;
+      margin: 30px 10% 0;
+    }
+
+
+  /* cont02 */
+  .cont02 {
+    padding: 60px 0 40px;
+  }
+
+    .cont02 h2 {
+      font-size: 180%;
+    }
+
+      .cont02-wrap img {
+        width: 35%;
+        float: left;
+        margin: 0 0 0 13%;
+    }
+
+    .cont02-wrap ul {
+      padding: 0 0 0 5%;
+      float: left;
+      width: 47%;
+      margin: 0;
+    }
+
+
+  /* cont共有 */
+  .cont {
+    padding: 60px 0 40px;
+  }
+
+    .cont h2 {
+      font-size: 160%;
+      width: 80%;
+      margin: 0 10%;
+    }
+
+
+  /* cont03 */
+  .job-search {
+    width: 80%;
+    margin: 30px 10% 0;
+  }
+
+    .job-search-cont {
+      width: 26%;
+      float: left;
+      padding: 20px 3%;
+      margin: 0;
+    }
+
+      .jsc-margin {
+        margin: 0 2%;
+      }
+
+    .cont03-contact {
+      width: 60%;
+      margin: 40px 20% 0;
+      padding: 16px 0;
+      border: 3px solid #e70;
+      font-size: 140%;
+      transition: .3s;
+    }
+
+      .cont03-contact:hover {
+        background: #fff;
+        color: #e70;
+        font-weight: bold;
+      }
+
+
+  /* cont04 */
+  .voice {
+    width: 80%;
+    margin: 60px 10% 0;
+  }
+
+    .voice-cont {
+      width: 46%;
+      margin: 0 2%;
+      float: left;
+    }
+
+      .voice-cont-title {
+        padding: 12px 0;
+      }
+
+      .voice-cont-text {
+        margin: 16px 0 40px;
+      }
+
+
+  /* cont05 */
+  .faq {
+    width: 80%;
+    margin: 30px 10% 0;
+  }
+
+    .faq-wrap {
+      width: 32%;
+      float: left;
+    }
+
+      .faq-cont {
+        margin: 0 0 20px;
+      }
+
+      .faq-margin {
+        margin: 0 2%;
+      }
+
+      .faq-answer {
+        line-height: 154%;
+        height: 170px;
+      }
+
+      .faq-guide-item {
+        width: 100%;
+        margin: 0;
+      }
+
+  /* cont06 */
+  .reason {
+    width: 80%;
+    margin: 30px 10% 0;
+  }
+
+    .reason p {
+      font-size: 90%;
+      text-align: center;
+    }
+
+    .reason-wrap {
+      width: 68%;
+      float: left;
+      margin: 0 2% 0 0;
+    }
+
+      .reason-title {
+        width: 30%;
+      }
+
+    .reason-cont img {
+      width: 30%;
+      float: right;
+      margin: 0;
+    }
+
+
+  /* cont07 */
+  .cont07 h2 {
+    width: 80%;
+    padding: 8px 0;
+  }
+
+  .contact {
+    width: 78%;
+    margin: 30px 11% 0;
+  }
+
+    .contact-form {
+      padding: 40px 5% 20px;
+    }
+
+      .contact-item-title {
+        width: 9em;
+        margin: 0;
+      }
+
+      .wpcf7-text,
+      .wpcf7-textarea {
+        width: 56%;
+      }
+
+        .cf7-name {
+          width: 40%;
+        }
+
+        .cf7-tel {
+          width: 40%;
+        }
+
+        .wpcf7-list-item {
+          margin: 0 .5em 0 0;
+        }
+
+        .wpcf7-checkbox .wpcf7-list-item {
+          display: inline;
+          float: none;
+        }
+
+        .cit-last,
+        .cit-height {
+          height: inherit;
+        }
+
+        .check-other {
+          width: 7em;
+        }
+
+        /* 20190627 add */
+            .wpcf7-radio {
+              width: 70%;
+              float: left;
+            }
+            .wpcf7-radio .wpcf7-list-item-label {
+              margin: 0 0 0 1px;
+            }
+
+        .tos-cont, .pp-cont {
+          width: 88%;
+          height: 3em;
+        }
+
+      .confirm {
+        margin: 10px 0 0;
+      }
+
+      .wpcf7-submit {
+        width: 30%;
+        margin: 20px 35% 10px;
+        transition: .3s;
+        cursor: pointer;
+      }
+
+        .wpcf7-submit:hover {
+          background: #fff;
+          color: #e70;
+        }
+
+    .company {
+      width: 80%;
+    }
+
+      .company-cont {
+        padding: 20px 0;
+      }
+
+        .company table {
+          width: 80%;
+          margin: 0 10%;
+        }
+
+          .company table th {
+            width: 20%;
+          }
+
+          .company table td {
+            width: 80%;
+          }
+
+
+  /* footer */
+  footer {
+    font-size: 80%;
+    padding: inherit;
+    padding: 0 0 100px;
+  }
+
+    .to-top {
+      bottom: 90px;
+    }
+
+    .to-top:hover {
+      color: #f00;
+      background: #fff;
+    }
+
+  /* line */
+  .sp-line {
+    display: none;
+  }
+  .line-block {
+    display: block;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+  }
+  .line {
+    display: inline-block;
+    width: 832px;
+    z-index: 100;
+  }
+}
+/* PC CSS */

@@ -1,0 +1,46 @@
+// main: ../../default.scss
+  .c-job--ttl {
+    @include subTtl();
+  }
+  .c-job--details {
+    @include flex();
+    margin: 5px 0 12px;
+  }
+  .c-job--fee {
+    font-weight: bold;
+    margin: 15px 20px 0 0;
+  }
+  .c-job--location {
+    font-weight: bold;
+    margin-top: 15px;
+    &::before {
+      font-family: $iconFont;
+      content: '\f3c5';
+      margin-right: 8px;
+    }
+  }
+  .c-job--desc {
+    height: 118px;
+    overflow: hidden;
+  }
+@media all and (min-width: $mediaM-) {
+  .c-job:hover {
+    background: $grayColor;
+  }
+  .c-job--fee {
+    margin-right: 40px;
+  }
+  .c-job--desc {
+    font-size: 1.4rem;
+    height: inherit;
+    overflow: inherit;
+  }
+}
+@media all and (min-width: $mediaL-) {
+  .c-job--details {
+    margin: 9px 0 24px;
+  }
+  .c-job--desc {
+    font-size: 1.6rem;
+  }
+}

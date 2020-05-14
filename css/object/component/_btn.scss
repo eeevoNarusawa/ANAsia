@@ -1,0 +1,29 @@
+// main: ../../default.scss
+  .c-btn {
+    border-radius: 30px;
+    padding: 20px;
+  }
+  .c-btn__pink {
+    background: $subColor;
+    color: #fff;
+    text-align: center;
+  }
+  .c-btn__sp {
+    width: 60%;
+    margin: 24px auto;
+  }
+@media all and (min-width: $mediaM-) {
+  .c-btn {
+    border-radius: 15px;
+    padding: 12px 20px;
+  }
+  .c-btn__pink {
+    background: $subColor;
+    color: #fff;
+    text-align: center;
+    &:hover {
+      background: $blackColor;
+      color: $subColor;
+    }
+  }
+}

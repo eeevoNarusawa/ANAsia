@@ -1,0 +1,102 @@
+// main: ../../default.scss
+  .c-conts--ttl {
+    font-size: $ttlFontSize;
+    font-weight: bold;
+    font-family: $catchFont;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 38px;
+    &:before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: -15px;/*線の上下位置*/
+      display: inline-block;
+      width: 80px;/*線の長さ*/
+      height: 5px;/*線の太さ*/
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);/*位置調整*/
+      background-color: $mainColor;/*線の色*/
+      border-radius: 2px;/*線の丸み*/
+    }
+  }
+  .c-conts__pink {
+    background: $bgColor;
+  }
+  .c-conts__list {
+    padding: 12px;
+    background: #fff;
+  }
+  .c-conts--more {
+    font-size: 1.8rem;
+    text-align: right;
+    margin: 16px 24px 0 0;
+    a {
+      color: $mainColor;
+      border-bottom: 2px solid $mainColor;
+      padding-bottom: 6px;
+    }
+  }
+  .jp .c-conts--more {
+    font-size: 1.6rem;
+  }
+  .c-conts__page {
+    background-size: cover;
+    background-position: 50% 50%;
+    padding: 100px 0 60px;
+  }
+  .c-conts__page--ttl {
+    text-align: center;
+    font-size: $ttlFontSize;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 4px 4px 10px $blackColor;
+  }
+@media all and (max-width: $media-S) {
+  .c-conts {
+    padding: 40px 0;
+  }
+  .c-conts__list {
+    border-bottom: 1px solid $shadowColor;
+  }
+  .jp .c-conts--ttl {
+    font-size: 3rem;
+  }
+}
+@media all and (min-width: $mediaM-) {
+  .c-conts {
+    padding: 70px 0;
+  }
+  .c-conts--ttl {
+    margin-bottom: 50px;
+  }
+  .c-conts__list {
+    padding: 40px 48px;
+  }
+  .c-conts--more {
+    font-size: 2rem;
+    margin: 16px 32px 0 0;
+    a:hover {
+      color: $subColor;
+      border-bottom: 2px solid $subColor;
+    }
+  }
+  .c-conts__page {
+    padding: 140px 0 60px;
+  }
+}
+@media all and (min-width: $mediaL-) {
+  .c-conts {
+    padding: 120px 0;
+  }
+  .c-conts--more {
+    font-size: $subttlFontSize;
+    margin: 32px 60px 0 0;
+    a {
+      border-bottom: 3px solid $mainColor;
+      &:hover {
+        border-bottom: 3px solid $subColor;
+      }
+    }
+  }
+}

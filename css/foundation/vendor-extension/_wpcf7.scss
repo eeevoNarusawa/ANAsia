@@ -1,0 +1,86 @@
+// main: ../../default.scss
+/* iphone submit css reset */
+input[type="submit"],
+input[type="button"] {
+  border-radius: 30px;
+  -webkit-box-sizing: content-box;
+  -webkit-appearance: button;
+  appearance: button;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+input[type="submit"]::-webkit-search-decoration,
+input[type="button"]::-webkit-search-decoration {
+  display: none;
+}
+input[type="submit"]::focus,
+input[type="button"]::focus {
+  outline-offset: -2px;
+}
+.screen-reader-response,
+.wpcf7-not-valid-tip {
+  display: none;
+}
+.wpcf7-validation-errors {
+  text-align: center;
+  color: #f00;
+  font-size: 1.4rem;
+  margin-top: 16px;
+}
+.wpcf7-mail-sent-ok {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-top: 16px;
+}
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+  width: 96%;
+  height: 2em;
+  margin-top: 4px;
+}
+textarea {
+  width: 96%;
+  margin-top: 4px;
+}
+.wpcf7-list-item {
+  margin-right: 20px;
+  cursor: pointer;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.wpcf7-select {
+  margin-right: 12px;
+}
+.wpcf7-submit {
+  width: 160px;
+  background: $mainColor;
+  color: #fff;
+  padding: 12px 0;
+  margin: 24px auto 0;
+  font-size: 1.8rem;
+  letter-spacing: 2.5px;
+  &:hover {
+    background: $blackColor;
+    color: $subColor;
+  }
+}
+@media all and (max-width: $media-S) {
+  .wpcf7-list-item {
+    display: block;
+    margin: 6px 0 0 10px;
+  }
+}
+@media all and (min-width: $mediaM-) {
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"] {
+    width: 100%;
+    margin-top: 0;
+  }
+  textarea {
+    width: 100%;
+    margin-top: 0;
+  }
+}

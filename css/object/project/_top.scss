@@ -1,0 +1,170 @@
+// main: ../../default.scss
+// Catch image
+  .p-top-catch {
+    position: relative;
+  }
+  .p-top-catch--img {
+    display: none;
+  }
+  .p-top-catch__copy,
+  .p-top-catch--copy__sp {
+    position: absolute;
+    color: #fff;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-family: $catchFont;
+  }
+  .p-top-catch__text {
+    text-align: center;
+    font-weight: bold;
+    text-shadow: -4px 4px 5px #090909;
+  }
+// Why Choose ANAsia
+  .p-top-why--conts {
+    margin: 60px auto 0;
+    text-align: center;
+  }
+  .p-top-why--icon {
+    width: 100px;
+    margin: 0 auto;
+  }
+  .p-top-why--ttl {
+    font-weight: bold;
+    font-size: $subttlFontSize;
+  }
+  .p-top-desc {
+    padding: 32px 0 40px;
+  }
+  .p-top-desc--ttl {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  .p-top-desc--text {
+    font-size: 1.1rem;
+    margin-bottom: 24px;
+    a {
+      color: $mainColor;
+    }
+  }
+  .p-top-desc--text__bottom {
+    margin-bottom: 8px;
+  }
+@media all and (max-width: $media-S) {
+// Catch image
+  .p-top-catch__copy {
+    display: none;
+  }
+  .p-top-catch--copy__sp {
+    font-size: 7vw;
+    padding-bottom: 48px;
+  }
+  .jp .p-top-catch__copy {
+    display: block;
+    padding-bottom: 26px;
+    h3 {
+      font-size: 8vw;
+    }
+    h2 {
+      font-size: 7vw;
+    }
+  }
+  .p-top-catch__text {
+    line-height: 8vw;
+  }
+  .jp .p-top-catch__text {
+    line-height: 10vw;
+  }
+  .p-top-catch__needs {
+    margin: 5vw 0;
+  }
+// Why Choose ANAsia
+  .p-top-why {
+    @include containerS();
+  }
+  .p-top-why--conts {
+    width: 90%;
+  }
+  .p-top-why--ttl {
+    margin: 12px 0;
+  }
+  .jp .p-top-why--ttl {
+    font-size: 2.2rem;
+  }
+}
+@media all and (min-width: $mediaM-) {
+// Catch image
+  .p-top-catch--img {
+    display: block;
+  }
+  .p-top-catch--img__sp,
+  .p-top-catch--copy__sp {
+    display: none;
+  }
+  .p-top-catch__copy {
+    padding-bottom: 80px;
+    h1 {
+      font-size: 10vw;
+    }
+    h3 {
+      font-size: 8vw;
+    }
+    h2 {
+      font-size: 4.7vw;
+    }
+  }
+  .jp .p-top-catch__copy {
+    h3 {
+      font-size: 8vw;
+    }
+    h2 {
+      font-size: 7vw;
+    }
+  }
+  .p-top-catch__text {
+    line-height: 7vw;
+    margin-bottom: 20px;
+  }
+  .jp .p-top-catch__text {
+    line-height: 8.5vw;
+  }
+  .p-top-catch__needs {
+    margin: 50px 0 30px;
+  }
+  .jp .p-top-catch__needs {
+      margin: 20px 0 30px;
+    }
+// Why Choose ANAsia
+  .p-top-why {
+    @include containerM();
+  }
+  .p-top-why--conts {
+    width: 60%;
+  }
+  .p-top-why--ttl {
+    margin: 24px 0;
+  }
+  .p-top-desc {
+    padding: 0 0 60px;
+  }
+}
+@media all and (min-width: $mediaL-) {
+  .p-top-catch {
+    &__copy {
+      padding-bottom: 120px;
+    }
+    &__text {
+      margin-bottom: 20px;
+    }
+  }
+// Why Choose ANAsia
+  .p-top-why {
+    @include flex();
+    @include container(1160px);
+  }
+  .p-top-why--conts {
+    width: calc(91% / 3);
+    margin: 60px 1.5% 0;
+  }
+}

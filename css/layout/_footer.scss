@@ -1,0 +1,120 @@
+// main: ../default.scss
+  .l-footer {
+    color: #fff;
+  }
+  .l-footer__profile {
+    background: $blackColor;
+    padding: 24px 0;
+  }
+  .l-footer__profile--details {
+    @include flex();
+    font-size: 1.2rem;
+    margin-top: 12px;
+  }
+  .l-footer__profile--icons {
+    width: 180px;
+    @include flex();
+  }
+  .l-footer__profile--icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    &:nth-child(2) {
+      margin: 0 auto;
+    }
+  }
+  .l-footer__profile--whatsapp {
+    background: #16b882;
+    font-size: 3.3rem;
+  }
+  .l-footer__profile--facebook {
+    background: #2196f3;
+    font-size: 3rem;
+  }
+  .l-footer__profile--mail {
+    background: #ef5220;
+    font-size: 2.8rem;
+  }
+  .l-footer__copyright {
+    background: #231f20;
+    padding: 12px 0;
+  }
+  .l-footer__copyright--wrap {
+    font-size: 1.4rem;
+  }
+  .l-footer__copyright--terms {
+    @include flex();
+  }
+  .l-footer__copyright--link {
+    margin: 0 8px;
+    color: #fff;
+  }
+@media all and (max-width: $media-S) {
+  .l-footer__profile--ttl {
+    margin-right: 16px;
+    font-weight: bold;
+  }
+  .l-footer__profile--icons {
+    margin: 24px auto 0;
+  }
+  .l-footer__copyright--terms {
+    margin-top: 12px;
+  }
+}
+@media all and (min-width: $mediaM-) {
+  .l-footer__profile--wrap {
+    @include flex();
+  }
+  .l-footer__profile--conts {
+    width: 80%;
+  }
+  .l-footer__profile--ttl {
+    width: 80px;
+  }
+  .l-footer__profile--icons {
+    width: 18%;
+    margin-left: 2%;
+  }
+  .l-footer__profile--icon:nth-child(2) {
+    margin: 0 4px;
+  }
+  .l-footer__profile--whatsapp:hover {
+    background: #fff;
+    color: #16b882;
+  }
+  .l-footer__profile--facebook:hover {
+    background: #fff;
+    color: #2196f3;
+  }
+  .l-footer__profile--mail:hover {
+    background: #fff;
+    color: #ef5220;
+  }
+  .l-footer__copyright--name {
+    float: left;
+  }
+  .l-footer__copyright--terms {
+    float: right;
+  }
+  .l-footer__copyright--link:hover {
+    color: $subColor;
+  }
+}
+@media all and (min-width: $mediaL-) {
+  .l-footer__profile {
+    padding: 32px 0 24px;
+  }
+  .l-footer__profile--conts {
+    width: 700px;
+  }
+  .l-footer__profile--icons {
+    width: 182px;
+    margin-left: 78px;
+  }
+  .l-footer__profile--icon:nth-child(2) {
+    margin: 0 16px;
+  }
+}

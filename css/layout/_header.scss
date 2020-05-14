@@ -1,0 +1,120 @@
+// main: ../default.scss
+  .l-header {
+    @include flex();
+    width: 98%;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 15px #777;
+  }
+  .l-header--conts__left {
+    margin-right: auto;
+  }
+  .l-header--navi  {
+    @include flex();
+  }
+  .l-header--navi__lang--item {
+    margin: 0 6px 0 3px;
+  }
+  .l-header--active {
+    color: $subColor;
+  }
+@media all and (max-width: $media-S) {
+  .l-header {
+    padding: 10px 1%;
+    z-index: 2;
+  }
+  .l-header--conts__left {
+    width: 110px;
+  }
+  .l-header--logo {
+    width: 100%;
+  }
+  .l-header--conts__right {
+    width: 170px;
+  }
+  .l-header--navi__lang {
+    margin-top: 16px;
+  }
+  .l-header--navi__global,
+  .l-header--navi__M {
+    display: none;
+  }
+}
+@media all and (min-width: $mediaM-) {
+  .l-header {
+    padding: 10px 1% 0;
+    z-index: 100;
+  }
+  .jp .l-header {
+    font-size: 1.6rem;
+  }
+  .l-header--conts {
+    @include flex();
+  }
+  .l-header--logo {
+    width: 140px;
+    &:hover {
+      opacity: .7;
+    }
+  }
+  .l-header--navi__global {
+    margin: 15px 0 27px 40px;
+  }
+  .l-header--navi__global--item {
+    border-bottom: 3px solid $mainColor;
+    padding: 0 4px 4px;
+    margin: 14px 10px 0;
+    &:hover {
+      color: $mainColor;
+    }
+  }
+  .l-header--conts__right {
+    margin-top: 15px;
+  }
+  .l-header--btn {
+    margin: 0 5px;
+  }
+  .jp .l-header--btn {
+    font-size: 1.4rem;
+  }
+  .l-header--navi__lang {
+    margin: 12px 0 0 10px;
+  }
+  .l-header--navi__lang--item a:hover {
+    color: $subColor;
+  }
+}
+@media all and (min-width: $mediaM-) and (max-width: 940px) {
+  .l-header--navi__M  {
+    display: block;
+    margin-top: -25px;
+  }
+  .l-header--navi__global {
+    margin: 15px 0 27px 12px;
+  }
+  .l-header--btn {
+    margin: 5px 0;
+  }
+}
+@media all and (min-width: $mediaL-) {
+  .l-header {
+    padding: 10px 1%;
+    min-width: 1075px;
+  }
+  .l-header--logo {
+    width: 180px;
+  }
+  .l-header--navi__global {
+    margin: 24px 0 27px 40px;
+  }
+  .l-header--navi__global--item {
+    border-bottom: 4px solid $mainColor;
+    padding: 0 4px 10px;
+    margin: 14px 20px 0;
+  }
+  .l-header--conts__right {
+    margin-top: 26px;
+  }
+}

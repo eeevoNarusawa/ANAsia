@@ -1,0 +1,60 @@
+// main: ../../default.scss
+  .c-article {
+    border-bottom: 5px solid $shadowColor;
+  }
+  .c-article--catch {
+    width: 70%;
+    img {
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      max-height: 100%;
+      margin: auto;
+    }
+  }
+  .c-article--ttl {
+    @include subTtl();
+  }
+  .c-article--date {
+    color: #508bbd;
+    margin: 8px 0;
+  }
+@media all and (max-width: $media-S) {
+  .c-article--catch {
+    margin: 0 auto;
+    img {
+      display: block;
+    }
+  }
+}
+@media all and (min-width: $mediaM-) {
+  .c-article {
+    @include flex();
+    &:hover {
+      background: $bgColor;
+    }
+  }
+  .c-article--catch {
+    width: 26%;
+    margin-right: 4%;
+  }
+  .c-article--details {
+    width: 70%;
+  }
+}
+@media all and (min-width: $mediaL-) {
+  .c-article--catch {
+    width: 220px;
+    height: 220px;
+    margin-right: 44px;
+  }
+  .c-article--details {
+    width: 600px;
+  }
+  .c-article--ttl {
+    margin-top: 12px;
+  }
+  .c-article--date {
+    margin: 20px 0;
+  }
+}

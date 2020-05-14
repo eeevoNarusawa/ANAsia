@@ -1,0 +1,176 @@
+// main: ../../default.scss
+// catch
+  .p-overview-catch {
+    background-image: url('../images/overview_catch.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    padding: 70px 0 50px;
+  }
+  .p-overview-catch--copy {
+    @include containerS();
+    text-align: center;
+  }
+  .p-overview-profile {
+    margin-top: 60px;
+    background-size: cover;
+  }
+  .p-overview-profile__alvin {
+    background-image: url('../images/alvin.jpg');
+    background-position: 72% 0;
+  }
+  .p-overview-profile__nori {
+    background-image: url('../images/nori.jpg');
+    background-position: 10% 0;
+  }
+  .p-overview-profile__alvin--container {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .p-overview-profile__nori--container {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .p-overview-profile--index {
+    display: inline-block;
+    font-size: $subttlFontSize;
+    border-bottom: 2px solid $subColor;
+    padding-bottom: 6px;
+  }
+  .p-overview-profile--ttl {
+    font-size: $subttlFontSize;
+    margin: 20px 0;
+    &::before {
+      font-family: $iconFont;
+      content: "\f10d";
+      font-weight: 900;
+      color: $subColor;
+      margin: -12px 10px 0 -30px;
+      font-size: 20px;
+    }
+    &::after {
+      font-family: $iconFont;
+      content: "\f10e";
+      font-weight: 900;
+      color: $subColor;
+      font-size: 20px;
+      margin-left: 10px;
+    }
+  }
+  .p-overview-profile--msg {
+    margin: 20px 0;
+  }
+  .jp .p-overview-profile--msg {
+    font-size: 1.4rem;
+  }
+  .p-overview-profile--name {
+    font-family: $catchFont;
+    font-weight: bold;
+    font-size: $ttlFontSize;
+    margin-bottom: 12px;
+  }
+//Company Infomation
+  .p-overview-info {
+    @include containerS();
+  }
+  .p-overview-info--img {
+    width: 260px;
+  }
+  .p-overview-info--wrap {
+    width: 92%;
+    margin-left: 4%;
+  }
+  .p-overview-info--name {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+  }
+@media all and (max-width: $media-S) {
+  .p-overview-profile {
+    background-color:rgba(255,255,255,0.8);
+    background-blend-mode:lighten;
+  }
+  .p-overview-info--img {
+    margin: 0 auto 12px;
+  }
+  .p-overview-info--conts li {
+    margin-bottom: 12px;
+  }
+}
+@media all and (min-width: $mediaM-) {
+// catch
+  .p-overview-catch {
+    padding: 100px 0;
+  }
+  .p-overview-catch--copy {
+    @include containerM();
+  }
+  .p-overview-profile__alvin {
+    background-position: 70% 0;
+  }
+  .p-overview-profile__nori {
+    background-position: 20% 0;
+  }
+  .p-overview-profile__alvin--container {
+    width: 60%;
+    margin-left: 7%;
+  }
+  .p-overview-profile__nori--container {
+    width: 60%;
+    margin-left: 40%;
+  }
+  .p-overview-profile--ttl {
+    margin: 0 0 20px;
+    &::before {
+      margin: -12px 20px 0 -80px;
+      font-size: 60px;
+    }
+    &::after {
+      margin-left: 20px;
+    }
+  }
+//Company Infomation
+  .p-overview-info {
+    @include containerM();
+    @include flex();
+  }
+  .p-overview-info--img {
+    width: 30%;
+  }
+  .p-overview-info--wrap {
+    width: 66%;
+    margin-left: 4%;
+  }
+  .p-overview-info--conts {
+    line-height: 30px;
+  }
+}
+@media all and (min-width: $mediaL-) {
+// catch
+  .p-overview-catch {
+    padding: 200px 0;
+  }
+  .p-overview-catch--copy {
+    @include container();
+  }
+  .p-overview-profile__alvin--container {
+    width: 590px;
+    margin-left: 0;
+  }
+  .p-overview-profile__nori--container {
+    width: 590px;
+    margin-left: 350px;
+  }
+//Company Infomation
+  .p-overview-info {
+    @include container();
+  }
+  .p-overview-info--img {
+    width: 310px;
+  }
+  .p-overview-info--wrap {
+    width: 610px;
+    margin-left: 40px;
+  }
+  .p-overview-info--conts {
+    line-height: 36px;
+  }
+}

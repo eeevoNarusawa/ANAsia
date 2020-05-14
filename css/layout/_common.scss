@@ -1,0 +1,21 @@
+// main: ../default.scss
+@media all and (max-width: $media-S) {
+  .l-wrap {
+    padding-top: 52px;
+  }
+}
+@media all and (min-width: $mediaM-) {
+  .l-wrap {
+    padding-top: 70px;
+  }
+}
+@media all and (min-width: $mediaM-) and (max-width: 915px) {
+  .l-wrap {
+    padding-top: 80px;
+  }
+}
+@media all and (min-width: $mediaL-) {
+  .l-wrap {
+    padding-top: 95px;
+  }
+}
