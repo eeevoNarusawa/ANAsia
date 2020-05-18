@@ -140,7 +140,7 @@ Template Name: work-in-malaysia1
                   <th>勤務地</th><td>クアラルンプール</td>
                 </tr>
                 <tr>
-                  <th>給　与</th><td>RM9,000</td>
+                  <th>給　与</th><td>RM8,000</td>
                 </tr>
                 <tr>
                   <th>業　種</th><td>日系コンサル企業</td>
@@ -156,26 +156,26 @@ Template Name: work-in-malaysia1
                   <th>勤務地</th><td>スバンジャヤ</td>
                 </tr>
                 <tr>
-                  <th>給　与</th><td>RM8,500</td>
+                  <th>給　与</th><td>RM7,000</td>
                 </tr>
                 <tr>
-                  <th>業　種</th><td>外資メーカー</td>
+                  <th>業　種</th><td>日系メーカー</td>
                 </tr>
               </table>
             </div>
           </div><!-- job-search-cont02 -->
           <div class="job-search-cont">
-            <div class="jsc-title">■人事マネージャー■</div>
+            <div class="jsc-title">■ITサポート■</div>
             <div class="jsc-wrap">
               <table>
                 <tr>
                   <th>勤務地</th><td>クアラルンプール</td>
                 </tr>
                 <tr>
-                  <th>給　与</th><td>RM8,000</td>
+                  <th>給　与</th><td>RM7,000</td>
                 </tr>
                 <tr>
-                  <th>業　種</th><td>日系IT企業</td>
+                  <th>業　種</th><td>外資IT企業</td>
                 </tr>
               </table>
             </div>
@@ -310,6 +310,7 @@ Template Name: work-in-malaysia1
 
     <a href="#top"><div class="to-top">↑</div></a>
 
+    <? /*
     <a onclick="return gtag_report_conversion('https://lin.ee/4i1d4Vi');" href="https://lin.ee/4i1d4Vi" target="_blank"><div class="sp-line">友だち追加して<br>簡単無料登録</div></a>
     <div class="line-block">
       <a href="https://lin.ee/4i1d4Vi" target="_blank">
@@ -318,6 +319,7 @@ Template Name: work-in-malaysia1
         </div>
       </a>
     </div>
+    */ ?>
 
     <script src="<?php echo get_template_directory_uri(); ?>/LP1/kick-ring-lp.js"></script>
     <?php wp_footer(); ?>
