@@ -6,9 +6,28 @@ Template Name: work-in-malaysia-send
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Yahooリスティング -->
+    <script async src="https://s.yimg.jp/images/listing/tool/cv/ytag.js"></script>
+    <script>
+    window.yjDataLayer = window.yjDataLayer || [];
+    function ytag() { yjDataLayer.push(arguments); }
+    ytag({"type":"ycl_cookie"});
+    </script>
+
+    <script async>
+    ytag({
+      "type": "yss_conversion",
+      "config": {
+        "yahoo_conversion_id": "1001129173",
+        "yahoo_conversion_label": "mQ7jCNHsldIBEJOjv6sC",
+        "yahoo_conversion_value": "0"
+      }
+    });
+    </script>
+
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/reset.min.css">
-    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/LP1/style.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/LP1/style.css?20200727">
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon.ico"/>
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <!-- noindex -->
@@ -98,11 +117,51 @@ Template Name: work-in-malaysia-send
         </nav>
       </header>
 
-      <div class="send-cont">
-        <p>お問い合わせありがとうございました。</p>
-        <p>メッセージは送信されました。</p>
-        <p>のちほど担当者よりご連絡差し上げます。</p>
-        <p>5秒後にTOPページへ戻ります。</p>
+      <div class="send-kv">
+        <picture>
+          <source media="(max-width: 812px)" srcset="<?php bloginfo('stylesheet_directory'); ?>/LP1/image/sp/send_kv.jpg">
+          <img src="<?php bloginfo('stylesheet_directory'); ?>/LP1/image/send_kv.jpg">
+        </picture>
+        <div class="send-kv_thx">ご登録いただき<br class="send-sp">ありがとうございます</div>
+      </div>
+      <div class="send-copy">
+        マレーシア就職への第一歩を踏み出しましたね！<br>
+        AN ASIAスタッフ一同、<br class="send-sp">全力でサポートしますので、<br class="send-sp">マレーシアで活躍する日を目指して<br class="send-sp">一緒に頑張りましょう！
+      </div>
+      <div class="send-next">今後の流れはこちら</div>
+      <div class="send-wrap">
+        <div class="send-step">
+          <img src="<?php bloginfo('stylesheet_directory'); ?>/LP1/image/send_step01.jpg">
+          <div class="send-step--head">LINE公式アカウントへ登録する</div>
+          <div class="send-step--desc">LINEにてマレーシア就職に必要な様々なサポートを受けられます。</div>
+          <div class="send-step--line"><a href="https://lin.ee/4i1d4Vi" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/LP1/image/send_line.png"></a></div>
+        </div>
+        <div class="send-step">
+          <img src="<?php bloginfo('stylesheet_directory'); ?>/LP1/image/send_step02.jpg">
+          <div class="send-step--head">面談を予約する</div>
+          <div class="send-step--desc">コンサルタントとの面談をご予約ください。マレーシア就職についていろいろお話ししましょう。</div>
+          <div class="send-step--book"><a href="https://timerex.net/s/AN_asia_malaysia/2e626382" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/LP1/image/send_book.png"></a></div>
+        </div>
+        <div class="send-step">
+          <img src="<?php bloginfo('stylesheet_directory'); ?>/LP1/image/send_step03.jpg">
+          <div class="send-step--head">履歴書を作成する</div>
+          <div class="send-step--desc">履歴書作成が不安な方はLINEでコンサルタントと無料相談もできます。</div>
+          <div class="send-step--line"><a href="https://lin.ee/4i1d4Vi" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/LP1/image/send_line.png"></a></div>
+        </div>
+      </div>
+      <div class="send-contact">
+        <div class="send-contact--head">お問い合わせについて</div>
+        <table class="send-contact--table">
+          <tr>
+            <th>Email</th><td>：info@an-asia.com</td>
+          </tr>
+          <tr>
+            <th>営業時間</th><td>：日本時間 9:30〜18:30</td>
+          </tr>
+          <tr>
+            <th></th><td>：マレーシア時間 8:30〜17:30</td>
+          </tr>
+        </table>
       </div>
     </div>
 
@@ -112,14 +171,14 @@ Template Name: work-in-malaysia-send
 
     <a href="#top"><div class="to-top">↑</div></a>
 
-    <a onclick="return gtag_report_conversion('https://lin.ee/4i1d4Vi');" href="https://lin.ee/4i1d4Vi" target="_blank"><div class="sp-line">友だち追加して<br>簡単無料登録</div></a>
+    <!-- <a onclick="return gtag_report_conversion('https://lin.ee/4i1d4Vi');" href="https://lin.ee/4i1d4Vi" target="_blank"><div class="sp-line">友だち追加して<br>簡単無料登録</div></a>
     <div class="line-block">
       <a href="https://lin.ee/4i1d4Vi" target="_blank">
         <div class="line">
           <img src="<?php bloginfo('stylesheet_directory'); ?>/LP1/image/line_new.jpg">
         </div>
       </a>
-    </div>
+    </div> -->
 
     <script src="<?php echo get_template_directory_uri(); ?>/LP1/kick-ring-lp.js"></script>
     <?php wp_footer(); ?>
